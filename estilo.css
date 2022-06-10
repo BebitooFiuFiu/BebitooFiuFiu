@@ -1,0 +1,170 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+h1{
+	color: white;
+	font-size: 4em;
+	text-align: center;
+}
+.banner-nav{
+	background-image: url("eclipse.jpg");
+	background-position: center center;
+	background-size: cover;
+	height: 100vh;
+}
+.contenedor-nav{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px 0;
+}
+.navegacion{
+	padding: 15px 0;
+}
+.navegacion a{
+	padding: 10px 2px;
+	font-weight: bold;
+	color: white;
+}
+.navegacion a:hover{
+	background-color: #4c33bd;
+}
+.section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+}
+.section a{
+	margin-top: 5%;
+	padding: 20px 40px;
+	color: white;
+	border: 2px solid white;
+	border-radius: 20px;
+	font-weight: bold;
+}
+
+.section a:hover{
+	background-color: white;
+	color: black;
+}
+.separador{
+	border: 1px solid black;
+	width: 50%;
+	margin: 20px auto;
+}
+.titulo-galeria{
+	padding: 20px 0;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+}
+.contain-image{
+	display: flex;
+	justify-content: center;
+}
+.contain-text{
+	padding: 5%;
+	text-align: center;
+}
+.contain-galeria{
+	background-color: #d4d9d8;
+}
+.contain-column{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.column-image{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+.column-image p{
+	padding: 4% 10%;
+
+}
+.column-image-com{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.column-image a{
+	
+	border: 2px solid black;
+	margin: 2% 0 4% 0;
+	padding: 10px 20px;
+	border-radius: 20px;
+	color: black;
+	font-weight: bold;
+}
+.column-image a:hover{
+	background-color: white;
+	color: black;
+}
+.footer{
+	background-color: black;
+	text-align: center;
+	color: white;
+	padding: 10px 0;
+}
+@media (min-width: 700px){
+	.contenedor-nav{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.navegacion a{
+		padding: 10px 30px;
+	}
+	.separador{
+		width: 0%;
+	}
+	.contain-column{
+		padding: 20px
+	}
+	.contain-galeria{
+		width: 100%;
+	}
+	.column-image{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 0 5%;
+	}
+	.column-image img{
+		width: 400px;
+		height: 350px;
+	}
+	.column-image-com{
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+	}	
+	.column-image-com a{
+		margin-top: 10px;
+	}
+	.column-image-com p{
+		padding: 0 10%;
+	}
+	.contain-information{
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+	.contain-image img{
+		width: 400px;
+	}
+	.contain-text{
+		width: 40%;
+	}
+	
+}
